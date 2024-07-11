@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food and Nutrition</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial,sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:green;
+            color: white;
+        }
+        nav {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 10px;
+        }
+        nav img {
+            height: 40px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: bold;
+            font-weight: bold;
+        }
+        nav .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        header {
+            position: relative;
+            height: 400px;
+            text-align: center;
+            color: #;
+        }
+        header::before {
+            content: "";
+            background: url('header-image1.jpeg') no-repeat center center/cover;
+            filter: blur(2px);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+        header h1 {
+            margin-top: 0;
+            padding-top: 100px;
+            font-size: 3em;
+        }
+        header p {
+            font-size: 1.5em;
+        }
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .section-image {
+            width: 20%;
+            height: 5;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        .about, .contact {
+            background-color: purple;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .about h2, .contact h2 {
+            margin-top: 0;
+        }
+        .subsection {
+            padding: 20px 0;
+        }
+        .subsection h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <img src="logo.jpeg" alt="Food and Nutrition Logo">
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#nutrition">Nutrition</a>
+            <a href="#recipes">Recipes</a>
+            <a href="#blog">Blog</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+    </nav>
+
+    <header id="home">
+        <h1>Welcome to Food and Nutrition</h1>
+        <p>Your guide to healthy eating and delicious recipes</p>
+    </header>
+
+    <section id="nutrition">
+        <h2>Nutrition</h2>
+        <p>Learn about the nutritional values of different foods and how to maintain a balanced diet.</p>
+        <img src="nutrition.jpeg" alt="Nutrition" class="section-image">
+        <div class="subsection">
+            <h3>Macronutrients</h3>
+            <p>Understanding macronutrients: carbohydrates, proteins, and fats.</p>
+            <img src="Macronutrients.jpeg" alt="Macronutrients" class="section-image">
+        </div>
+        <div class="subsection">
+            <h3>Micronutrients</h3>
+            <p>The importance of vitamins and minerals in your diet.</p>
+            <img src="Micronutrients.jpeg" alt="Micronutrients" class="section-image">
+        </div>
+    </section>
+
+    <section id="recipes">
+        <h2>Recipes</h2>
+        <p>Explore our collection of healthy and tasty recipes.</p>
+        <img src="recipes-image.jpeg" alt="Recipes" class="section-image">
+        <div class="subsection">
+            <h3>Breakfast Recipes</h3>
+            <p>Start your day with a nutritious breakfast.</p>
+            <img src="recipes-image.jpeg" alt="Breakfast Recipes" class="section-image">
+        </div>
+        <div class="subsection">
+            <h3>Lunch Recipes</h3>
+            <p>Delicious and healthy lunch options.</p>
+            <img src="Lunch Recipes.jpeg" alt="Lunch Recipes" class="section-image">
+        </div>
+        <div class="subsection">
+            <h3>Dinner Recipes</h3>
+            <p>End your day with a satisfying and healthy dinner.</p>
+            <img src="Dinner Recipes.jpeg" alt="Dinner Recipes" class="section-image">
+        </div>
+    </section>
+ <section id="blog">
+        <h2>Blog</h2>
+        <p>Read our latest articles on food, nutrition, and healthy living.</p>
+        <img src="blog-image2.jpeg" alt="Blog" class="section-image">
+        <div class="subsection">
+            <h3>Latest Trends</h3>
+            <p>Stay updated with the latest trends in the world of food and nutrition.</p>
+            <img src="trends.jpeg" alt="Latest Trends" class="section-image">
+        </div>
+        <div class="subsection">
+            <h3>Expert Advice</h3>
+            <p>Get tips and advice from nutrition experts.</p>
+            <img src="expert-advice.jpeg" alt="Expert Advice" class="section-image">
+        </div>
+        <div class="subsection">
+            <h3>Success Stories</h3>
+            <p>Read inspiring success stories from our community.</p>
+            <img src="success-stories.jpg" alt="Success Stories" class="section-image">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>We are passionate about promoting healthy eating habits and sharing delicious recipes with our community.</p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or feedback? We'd love to hear from you!</p>
+        <p>Email: info@foodandnutrition.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </section>
+
+</body>
+</html>
